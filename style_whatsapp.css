@@ -1,0 +1,315 @@
+/********** check style  **********/
+.typebot-host-bubble {
+    padding-right: 12px;
+  }
+  
+  #checkIcon {
+    stroke-dasharray: 40;
+    stroke-dashoffset: 40;
+    z-index: 99;
+  }
+  
+  #checkIcon path:nth-child(1) {  
+    animation: showIcon 250ms ease forwards;
+    animation-delay: 500ms;
+  }
+  
+  
+  #checkIcon path:nth-child(2) {  
+    animation: showIcon 250ms ease forwards;
+    animation-delay: 400ms;
+  }
+  
+  
+  @keyframes showIcon {
+    to { stroke-dashoffset: 0 };
+  }
+  /********** check style  **********/
+  
+
+.typebot-chat-view > .flex:first-child {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.typebot-container {
+    background-size: initial!important;
+    background-repeat: repeat-x!important;
+}
+
+.typebot-host-bubble>.bubble-typing {
+  border-radius: 0 5px 5px 5px;
+}
+
+.typebot-host-bubble>.bubble-typing:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+    top: 0;
+    left: -10px;
+}
+
+.typebot-guest-bubble {
+  position: relative;
+  border-radius: 5px 0 5px 5px;
+}
+
+.typebot-guest-bubble:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.typebot-guest-bubble:after {
+    border-width: 0px 0 10px 10px;
+    border-color: transparent transparent transparent #e1ffc7;
+    top: 0;
+    right: -10px;
+    border-style: solid;
+}
+
+iframe[src=""] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: relative;
+  width: 100%;
+  height: 100% !important;
+  z-index: 999999;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+a#lite-badge {
+  display: none!important;
+}
+
+/* BotÃ£o do input */
+.typebot-input .typebot-button {
+  content: "";
+  background: rgba(0, 138, 134, 1);
+  border-radius: 50%; 
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; 
+  height: 50px; 
+  border: none;
+  font-size: 0px;
+  color: transparent;
+}
+
+.typebot-input .typebot-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="19px"><path d="M476.59 227.05l-.16-.07L49.35 49.84A23.56 23.56 0 0027.14 52 24.65 24.65 0 0016 72.59v113.29a24 24 0 0019.52 23.57l232.93 43.07a4 4 0 010 7.86L35.53 303.45A24 24 0 0016 327v113.31A23.57 23.57 0 0026.59 460a23.94 23.94 0 0013.22 4 24.55 24.55 0 009.52-1.93L476.4 285.94l.19-.09a32 32 0 000-58.8z" fill="white"/></svg>');
+}
+
+/* Oculta o Ã­cone anterior*/
+.typebot-input .typebot-button .send-icon {
+  display: none; 
+}
+
+/* Corrigir cor do botÃ£o */
+.disabled\:opacity-50:disabled {
+    opacity: 100%;
+}
+
+
+
+audio::-webkit-media-controls-play-button{
+  background-color: #fff;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #fff;
+  background-size: 200px 2000px;
+}
+audio::-webkit-media-controls-current-time-display {
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 50px;
+  color: #666;
+}
+audio::-webkit-media-controls-time-remaining-display {
+  display: none;
+}
+
+/* HIDE DOWNLOAD BUTTON OF AUDIO */
+audio::-internal-media-controls-download-button {
+    display:none;
+}
+audio::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+audio::-webkit-media-controls-panel {
+    width: calc(100% + 30px); /* Adjust as needed */
+} 
+
+/* HIDE DOWNLOAD BUTTON OF VIDEO */
+video::-internal-media-controls-download-button {
+    display:none;
+}
+video::-webkit-media-controls-enclosure {
+    overflow:hidden;
+}
+
+video::-webkit-media-controls-panel {
+    width: calc(100% + 30px); /* Adjust as needed */
+}
+
+ .hide {
+    display: none!important;
+  }
+  typebot-standard {
+    position: relative;
+    z-index: 99;
+  }
+  #__next {
+    position: relative;
+    z-index: 99;
+}
+  /* User Bar */
+.user-bar {
+  width: 100%;
+  height: 70px;
+  background: #005e54;
+  color: #fff;
+  padding: 0;
+  font-size: 24px;
+  position: absolute;
+  z-index: 99999;
+  display: block;
+  top: 0;
+}
+
+.user-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.user-bar div {
+    float: left;
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    margin-left: 10px;
+}
+
+.user-bar .actions {
+float: right;
+margin: 0 30px 0 0;
+}
+
+.user-bar .actions.more {
+  margin: 0 12px 0 32px;
+}
+
+
+.user-bar .avatar {
+  margin: 0 0 0 5px;
+  width: 36px;
+  height: 36px;
+}
+
+.user-bar .avatar img {
+  border-radius: 50%;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user-bar .name {
+  float: left;
+  font-size: 17px;
+  font-weight: 600;
+  text-overflow: ellipsis;
+  letter-spacing: 0.3px;
+  margin: 0 0 0 8px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.user-bar .status {
+  display: block;
+  left: 0px;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+  /* BotÃ£o do input */
+.typebot-input .typebot-button {
+  content: "";
+  background: rgba(0, 138, 134, 1); 
+  position: relative;
+  justify-content: center;
+  width: 50px; 
+  height: 50px;
+  right: -60px;
+  border: none;
+  font-size: 0px;
+  color: transparent;
+  box-shadow: 1 2px 1px -1px rgba(0,0,0,.2);
+}
+
+.typebot-input .typebot-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="19px"><path d="M476.59 227.05l-.16-.07L49.35 49.84A23.56 23.56 0 0027.14 52 24.65 24.65 0 0016 72.59v113.29a24 24 0 0019.52 23.57l232.93 43.07a4 4 0 010 7.86L35.53 303.45A24 24 0 0016 327v113.31A23.57 23.57 0 0026.59 460a23.94 23.94 0 0013.22 4 24.55 24.55 0 009.52-1.93L476.4 285.94l.19-.09a32 32 0 000-58.8z" fill="white"/></svg>');
+}
+
+/* Oculta o Ã­cone anterior*/
+.typebot-input .typebot-button .send-icon {
+  display: none; 
+}
+
+/* Estilo da caixa do input */
+.typebot-input {
+    width: -webkit-calc(100% - 60px) !important;
+    width:    -moz-calc(100% - 60px) !important;
+    width:         calc(100% - 60px) !important;
+    max-width: -webkit-calc(100% - 60px) !important;
+    max-width:    -moz-calc(100% - 60px) !important;
+    max-width:         calc(100% - 60px) !important;  
+    position: fixed;
+    bottom: 10px;
+    right: 55px;
+    align-items: center;
+    z-index: 9999;
+    margin-bottom: 0px;
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 1 2px 1px -1px rgba(0,0,0,.2);
+    height: 50px;
+}
+
+
+/* Corrigir cor do botÃ£o */
+.disabled\:opacity-50:disabled {
+    opacity: 100%;
+}
