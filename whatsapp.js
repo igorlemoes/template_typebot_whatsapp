@@ -101,7 +101,7 @@ function criarBarra(var_nome, var_avatar) {
         link.id   = cssId;
         link.rel  = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://raw.githubusercontent.com/igorlemoes/template_typebot_whatsapp/main/style_whatsapp.css';
+        link.href = 'https://raw.githubusercontent.com/igorlemoes/template_typebot_whatsapp/main/whatsapp.css';
         link.media = 'all';
         head.appendChild(link);
     }
