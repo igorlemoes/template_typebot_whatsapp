@@ -2,7 +2,7 @@ function criarBarra(var_nome, var_avatar) {
 
   // Estilos CSS embutidos diretamente no JavaScript
 const css = `
-  .typebot-chat-view {padding-top: 90px, padding-bottom: 300px}
+  .typebot-chat-view {padding-top: 90px; padding-bottom: 300px;}
 
   div > div.typebot-chat-view.scroll-smooth.gap-2 > div > div > div.flex.flex-col.flex-1.gap-2 > div { margin-top: 20px;}
 
